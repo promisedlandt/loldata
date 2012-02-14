@@ -56,5 +56,35 @@ The champion data hashes contain the following keys, which should be mostly self
 
 ### Sources
 
-1. The offical EUW site will be parsed at http://euw.leagueoflegends.com/champions
+1. The official EUW site will be parsed at http://euw.leagueoflegends.com/champions
 2. The League of Legends Wiki will be parsed at http://leagueoflegends.wikia.com/wiki/Base_champion_statistics
+
+---
+
+## Items
+
+Get a list of all the items:
+
+```ruby
+LolData::Item.all
+```
+
+This returns an array of hashes containing the item data.
+
+The item data hashes contain the following keys:
+
+ * `:name`: the items's name (e.g. "Abyssal Scepter")
+ * `:riot_image_url`: URL to the official item picture (e.g. "http://euw.leagueoflegends.com/sites/default/files/game_data/1.0.0.133/content/item/3001.png")
+ * `:riot_id`: an integer Riot uses to identify the items (e.g. 3001)
+ * `:riot_description`: description from the official site, includes all the stats, actives, passives (e.g. "+70 Ability Power +57 Magic Resist  UNIQUE Aura: Reduces the Magic Resist of nearby enemy champions by 20.)
+
+### Sources
+1. The official EUW site will be parsed at http://euw.leagueoflegends.com/items
+
+---
+
+## Todo
+ * Parse champion detail pages on official site so we don't need to parse wikia
+ * Split item attributes so we don't just return the string
+ * Figure out how to write specs for a gem that only scrapes other pages
+ * Better error handling
