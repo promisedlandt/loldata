@@ -1,5 +1,11 @@
 # loldata - Get a list of all the the champions in League of Legends
 
+## Disclaimer
+
+Please note that this gem only scrapes websites, it does not read actual game files. Changes to the web sites' structures can break this gem, and the accuracy of all data derived from this gem depends on the accuracy of the web sites scraped.
+
+---
+
 ## Installation
 
 Since this gem is completely unfinished and bad, it's not in the rubygems.org directory yet, so you'll have to install it directly from github:
