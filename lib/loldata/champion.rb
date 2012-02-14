@@ -30,7 +30,7 @@ module LolData
       champion_atts_td = { :health => 1,
                            :health_growth => 2,
                            :health_reg => 3,
-                           :heath_reg_growth => 4,
+                           :health_reg_growth => 4,
                            :mana => 5,
                            :mana_growth => 6,
                            :mana_reg => 7,
@@ -53,7 +53,7 @@ module LolData
           champ = { :name => row.css('a').first.attributes['title'].value.strip }
 
           champion_atts_td.each do |att, number|
-            champ[att] = tds[number].children.first.text.to_i
+            champ[att] = tds[number].children.first.text.to_f
           end
 
           champs[champ[:name].downcase] = champ

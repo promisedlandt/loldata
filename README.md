@@ -32,7 +32,7 @@ The champion data hashes contain the following keys, which should be mostly self
  * `:health`: champion's starting health (e.g. 450)
  * `:health_growth`: how many hp the champion gets per level (e.g. 85)
  * `:health_reg`
- * `:heath_reg_growth`
+ * `:health_reg_growth`
  * `:mana`
  * `:mana_growth`
  * `:mana_reg`
