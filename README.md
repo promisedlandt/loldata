@@ -76,7 +76,7 @@ The item data hashes contain the following keys:
  * `:name`: the item's name (e.g. "Abyssal Scepter")
  * `:riot_image_url`: URL to the official item picture (e.g. "http://euw.leagueoflegends.com/sites/default/files/game_data/1.0.0.133/content/item/3001.png")
  * `:riot_id`: an integer Riot uses to identify the items (e.g. 3001)
- * `:riot_description`: description from the official site, includes all the stats, actives, passives (e.g. "+70 Ability Power +57 Magic Resist  UNIQUE Aura: Reduces the Magic Resist of nearby enemy champions by 20.)
+ * `:riot_description`: description from the official site, includes all the stats, actives, passives (e.g. "+70 Ability Power +57 Magic Resist  UNIQUE Aura: Reduces the Magic Resist of nearby enemy champions by 20.")
 
 ### Sources
 1. The official EUW site will be parsed at http://euw.leagueoflegends.com/items
