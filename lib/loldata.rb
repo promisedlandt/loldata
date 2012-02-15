@@ -1,3 +1,5 @@
+require 'nokogiri'
+
 module LolData
   autoload :VERSION, 'loldata/version'
 
