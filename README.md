@@ -35,6 +35,7 @@ The champion data hashes contain the following keys, which should be mostly self
  * `:name`: the champion's name (e.g. "Akali")
  * `:riot_image_url`: URL to the official portrait (e.g. "http://euw.leagueoflegends.com/sites/default/files/game_data/1.0.0.133/content/champion/icons/84.jpg")
  * `:riot_description_short`: short description from the official site (e.g. "There exists an ancient order..." etc.)
+ * `:riot_id`: an integer Riot supposedly uses to uniquely identify the champions (e.g. 84)
  * `:health`: champion's starting health (e.g. 450)
  * `:health_growth`: how many hp the champion gets per level (e.g. 85)
  * `:health_reg`
@@ -75,7 +76,7 @@ The item data hashes contain the following keys:
 
  * `:name`: the item's name (e.g. "Abyssal Scepter")
  * `:riot_image_url`: URL to the official item picture (e.g. "http://euw.leagueoflegends.com/sites/default/files/game_data/1.0.0.133/content/item/3001.png")
- * `:riot_id`: an integer Riot uses to identify the items (e.g. 3001)
+ * `:riot_id`: an integer Riot supposedly uses to uniquely identify the items (e.g. 3001)
  * `:riot_description`: description from the official site, includes all the stats, actives, passives (e.g. "+70 Ability Power +57 Magic Resist  UNIQUE Aura: Reduces the Magic Resist of nearby enemy champions by 20.")
 
 ### Sources

@@ -15,6 +15,10 @@ module LolData
         champ[:name] = table.css('td.description span.highlight a').first.children.first.text.strip
         champ[:riot_description_short] = table.css('td.description p').text
 
+        if champ[:riot_image_url] =~ /(\d+)\.jpg$/
+          champ[:riot_id] = $1.to_i
+        end
+
         champs[champ[:name].downcase] = champ
       end
 
